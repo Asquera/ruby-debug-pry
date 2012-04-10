@@ -1,43 +1,31 @@
+PATH
+  remote: .
+  specs:
+    debugger-pry (0.0.3)
+      debugger (~> 1.1.0)
+      pry (>= 0.8.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
-    archive-tar-minitar (0.5.2)
-    coderay (0.9.7)
-    columnize (0.3.2)
-    linecache (0.43)
-    linecache19 (0.5.12)
-      ruby_core_source (>= 0.1.4)
-    method_source (0.4.1)
-      ruby_parser (>= 2.0.5)
-    pry (0.8.3)
-      coderay (>= 0.9.7)
-      method_source (>= 0.4.0)
-      ruby_parser (>= 2.0.5)
-      slop (>= 1.5.3)
-    ruby-debug (0.10.4)
-      columnize (>= 0.1)
-      ruby-debug-base (~> 0.10.4.0)
-    ruby-debug-base (0.10.4)
-      linecache (>= 0.3)
-    ruby-debug-base19 (0.11.25)
+    coderay (1.0.6)
+    columnize (0.3.6)
+    debugger (1.1.1)
       columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby_core_source (>= 0.1.4)
-    ruby-debug19 (0.11.6)
-      columnize (>= 0.3.1)
-      linecache19 (>= 0.5.11)
-      ruby-debug-base19 (>= 0.11.19)
-    ruby_core_source (0.1.5)
-      archive-tar-minitar (>= 0.5.2)
-    ruby_parser (2.0.6)
-      sexp_processor (~> 3.0)
-    sexp_processor (3.0.5)
-    slop (1.5.3)
+      debugger-linecache (~> 1.1)
+      debugger-ruby_core_source (~> 1.1)
+    debugger-linecache (1.1.1)
+      debugger-ruby_core_source (>= 1.1.1)
+    debugger-ruby_core_source (1.1.1)
+    method_source (0.7.1)
+    pry (0.9.8.4)
+      coderay (~> 1.0.5)
+      method_source (~> 0.7.1)
+      slop (>= 2.4.4, < 3)
+    slop (2.4.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  pry (>= 0.8.3)
-  ruby-debug (~> 0.10.4)
-  ruby-debug19 (~> 0.11.6)
+  debugger-pry!
